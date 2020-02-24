@@ -15,10 +15,10 @@
         <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
         </li>
-        <!--li class="nav-item">
-            <a class="nav-link" href="form.html">Fill Out Form</a>
-        </li>
         <li class="nav-item">
+            <a class="nav-link" href="mypage_bootstrap.html">Profile</a>
+        </li>
+        <!--li class="nav-item">
             <a class="nav-link" href="#">Link 3</a>
         </li-->
     </ul>
@@ -27,62 +27,65 @@
     <br>
     <h3 align="center">Add New Interest</h3>
     <form action="mypage_bootstrap.html">
-        <div class="form-group row">
+        <div>
             <label for="interestName">Name of Interest</label>
             <input type="text" class="form-control" name="interestName" id="interestName"
                    placeholder="Enter the name of your interest.">
             <label for="interestText">Text About Interest</label>
             <textarea class="form-control" id="interestText" rows="3"
-                      placeholder="Enter some text about your interest."></textarea>
-
+                      placeholder="Enter some text about the interest."></textarea>
+            <br>
             <fieldset>
-                <div class="row">
-                    <div class="form-group col-">
-                        <br>
+                <div class="form-group row">
+                    <div class="form-group col">
                         <p>Upload local image:</p>
                         <input class="form-check-input" type="file" id="myImage" name="interestImg">
-                        <br><br>
-                        <p>On a scale of 1-5, how interested in this are you?</p>
+                        <br><br><br>
+                        <label>On a scale of 1-5, how interested in this are you? </label>
                         <div class="radio">
-                            <label class="radio-inline"><input type="radio" name="interestLevel">1</label>
-                            <label class="radio-inline"><input type="radio" name="interestLevel">2</label>
-                            <label class="radio-inline"><input type="radio" name="interestLevel">3</label>
-                            <label class="radio-inline"><input type="radio" name="interestLevel">4</label>
-                            <label class="radio-inline"><input type="radio" name="interestLevel">5</label>
+                            <label class="radio-inline"><input type="radio" name="interestLevel">1&nbsp</label>
+                            <label class="radio-inline"><input type="radio" name="interestLevel">2&nbsp</label>
+                            <label class="radio-inline"><input type="radio" name="interestLevel">3&nbsp</label>
+                            <label class="radio-inline"><input type="radio" name="interestLevel">4&nbsp</label>
+                            <label class="radio-inline"><input type="radio" name="interestLevel">5&nbsp</label>
                         </div>
                     </div>
-                    <div class="form-group col-">
-                        <br>
-                        <p>Select # tweets to display</p>
-                        <select name="undergrad_level" id="undergrad_select" class="custom-select custom-select-sm">
-                            <option selected>--</option>
+                    <div class="form-group col">
+                        <label for="numTweets">Select # tweets to display</label>
+                        <select name="numTweets" id="numTweets" class="custom-select custom-select-sm">
+                            <option selected>0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12+">12+</option>
                         </select>
                     </div>
                 </div>
-                <p>Login to Finish Submitting:</p>
-                <div class="row">
-                    <div class="col-">
-                        <input type="text" class="form-control" name="username" id="username"  placeholder="Username">
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="username">Login to Finish Submitting:</label>
+                        <input type="text" class="form-control" name="username"
+                               id="username" placeholder="Username">
                     </div>
-                    <div class="col-">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    <div class="col">
+                        <label for="password">&nbsp</label>
+                        <input type="password" class="form-control" id="password"
+                               name="password" placeholder="Password">
                     </div>
                 </div>
             </fieldset>
-            <input type="submit" value="submit" class="btn btn-primary btn-block">
+            <input type="submit" value="Submit!" class="btn btn-primary btn-block">
         </div>
     </form>
-</div>
-<script>
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function () {
-        var fileName = $(this).val().split("\\").pop();
-        $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
-</script>
+</>
+
 </body>
 </html>
