@@ -16,12 +16,12 @@
         <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
         </li>
-        <!--li class="nav-item">
-            <a class="nav-link" href="form.html">Fill Out Form</a>
+        <li class="nav-item">
+            <a class="nav-link" href="signup-modial/login.html">Sign Up</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link 3</a>
-        </li-->
+            <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic-Tac-Toe Game</a>
+        </li>
     </ul>
 </nav>
 <div class="container">
@@ -57,8 +57,17 @@
         </tbody>
     </table>
     <h3>Interests</h3>
+    <script>
+        function addCard() {
+            var tweet = $('<div class="card" > .... more card info goes here... </div>');
+            tweet.appendTo('????')
+        }
+        function deleteCard() {
+
+        }
+    </script>
     <div class="card-deck">
-        <div class="card bg-transparent">
+        <div class="card bg-transparent" id="interest1" onclick="addCard()">
             <img class="card-img-top" height="190px" src="https://i.ytimg.com/vi/p-FLWabby4Y/maxresdefault.jpg"
                  alt="Card image">
             <div class="card-body text-center">
@@ -66,7 +75,7 @@
                 <p class="card-text">#text</p>
             </div>
         </div>
-        <div class="card bg-transparent">
+        <div class="card bg-transparent" id="interest2" onclick="addCard()">
             <img class="card-img-top" height="190px"
                  src="https://circuitcellar.com/wp-content/uploads/2013/08/vlsi-future-1140x549.jpg" alt="Card image">
             <div class="card-body text-center">
@@ -74,7 +83,7 @@
                 <p class="card-text">#text</p>
             </div>
         </div>
-        <div class="card bg-transparent">
+        <div class="card bg-transparent" id="interest3" onclick="addCard()">
             <img class="card-img-top" height="190px"
                  src="https://www.izotope.com/content/dam/izotope/community/tips&tutorials/Understanding%20Spectrograms/izotope-rx4-spectrogram-8-1.png"
                  alt="Card image">
