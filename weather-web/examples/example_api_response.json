@@ -1,0 +1,134 @@
+//request: https://api.weatherstack.com/forecast?access_key=5bc82451636190abd9d7afe6fe9b20b5&query=Boulder&forecast_days=5
+{
+  "request": {
+    "type": "City",
+    "query": "Boulder, United States of America",
+    "language": "en",
+    "unit": "m"
+  },
+  "location": {
+    "name": "Boulder",
+    "country": "United States of America",
+    "region": "Colorado",
+    "lat": "40.015",
+    "lon": "-105.270",
+    "timezone_id": "America/Denver",
+    "localtime": "2020-04-02 23:34",
+    "localtime_epoch": 1585870440,
+    "utc_offset": "-6.0"
+  },
+  "current": {
+    "observation_time": "05:34 AM",
+    "temperature": -5,
+    "weather_code": 122,
+    "weather_icons": [
+      "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png"
+    ],
+    "weather_descriptions": [
+      "Overcast"
+    ],
+    "wind_speed": 6,
+    "wind_degree": 120,
+    "wind_dir": "ESE",
+    "pressure": 1020,
+    "precip": 1.2,
+    "humidity": 93,
+    "cloudcover": 100,
+    "feelslike": -8,
+    "uv_index": 1,
+    "visibility": 16,
+    "is_day": "no"
+  },
+  "forecast": {
+    "2020-04-02": {
+      "date": "2020-04-02",
+      "date_epoch": 1585785600,
+      "astro": {
+        "sunrise": "06:42 AM",
+        "sunset": "07:27 PM",
+        "moonrise": "01:07 PM",
+        "moonset": "03:28 AM",
+        "moon_phase": "First Quarter",
+        "moon_illumination": 64
+      },
+      "mintemp": -8,
+      "maxtemp": 0,
+      "avgtemp": -1,
+      "totalsnow": 2.7,
+      "sunhour": 7.7,
+      "uv_index": 5
+    },
+    "2020-04-03": {
+      "date": "2020-04-03",
+      "date_epoch": 1585872000,
+      "astro": {
+        "sunrise": "06:41 AM",
+        "sunset": "07:28 PM",
+        "moonrise": "02:16 PM",
+        "moonset": "04:15 AM",
+        "moon_phase": "Waxing Gibbous",
+        "moon_illumination": 71
+      },
+      "mintemp": -7,
+      "maxtemp": 1,
+      "avgtemp": -4,
+      "totalsnow": 2,
+      "sunhour": 9,
+      "uv_index": 6
+    },
+    "2020-04-04": {
+      "date": "2020-04-04",
+      "date_epoch": 1585958400,
+      "astro": {
+        "sunrise": "06:39 AM",
+        "sunset": "07:29 PM",
+        "moonrise": "03:29 PM",
+        "moonset": "04:58 AM",
+        "moon_phase": "Waxing Gibbous",
+        "moon_illumination": 79
+      },
+      "mintemp": -2,
+      "maxtemp": 8,
+      "avgtemp": 3,
+      "totalsnow": 0,
+      "sunhour": 11.6,
+      "uv_index": 6
+    },
+    "2020-04-05": {
+      "date": "2020-04-05",
+      "date_epoch": 1586044800,
+      "astro": {
+        "sunrise": "06:38 AM",
+        "sunset": "07:30 PM",
+        "moonrise": "04:44 PM",
+        "moonset": "05:36 AM",
+        "moon_phase": "Waxing Gibbous",
+        "moon_illumination": 87
+      },
+      "mintemp": 3,
+      "maxtemp": 14,
+      "avgtemp": 9,
+      "totalsnow": 0,
+      "sunhour": 11.6,
+      "uv_index": 7
+    },
+    "2020-04-06": {
+      "date": "2020-04-06",
+      "date_epoch": 1586131200,
+      "astro": {
+        "sunrise": "06:36 AM",
+        "sunset": "07:31 PM",
+        "moonrise": "06:00 PM",
+        "moonset": "06:09 AM",
+        "moon_phase": "Waxing Gibbous",
+        "moon_illumination": 94
+      },
+      "mintemp": 5,
+      "maxtemp": 15,
+      "avgtemp": 11,
+      "totalsnow": 0,
+      "sunhour": 0,
+      "uv_index": 7
+    }
+  }
+}
